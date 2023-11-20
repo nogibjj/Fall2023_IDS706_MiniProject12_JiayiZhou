@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jiayizhou/Desktop/Fall2023_IDS706_MiniProject12_JiayiZhou/mlruns/0/e9ec9953dca94c0985e6b186f3c07568/artifacts
+end_time: 1700449448804
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e9ec9953dca94c0985e6b186f3c07568
+run_name: unique-lark-102
+run_uuid: e9ec9953dca94c0985e6b186f3c07568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700449447565
+status: 3
+tags: []
+user_id: jiayizhou

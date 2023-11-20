@@ -3,13 +3,13 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py
+	python -m pytest -vv test_*.py
 
 format:	
 	black *.py 
 
 lint:
-	ruff check *.py mylib/*.py
+	ruff check *.py 
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
@@ -30,18 +30,11 @@ generate_and_push:
 		git config --local user.email "action@github.com"; \
 		git config --local user.name "GitHub Action"; \
 		git add .; \
-		git commit -m "Add SQL log"; \
+		git commit -m "Add ML Runs"; \
 		git push; \
 	else \
 		echo "No changes to commit. Skipping commit and push."; \
 	fi
 
-extract:
-	python main.py extract
-
-transform_load: 
-	python main.py transform_load
-
-query:
-	python main.py general_query "SELECT team AS Team, COUNT(*) AS TotalMatchesPlayed FROM (SELECT team1 AS team FROM default.matchesdb_one UNION ALL SELECT team2 AS team FROM default.matchesdb_one UNION ALL SELECT team1 AS team FROM default.wwc_matches_2_db UNION ALL SELECT team2 AS team FROM default.wwc_matches_2_db) AS AllTeams GROUP BY Team ORDER BY TotalMatchesPlayed DESC;"
-
+ml_run:
+	python main.py
