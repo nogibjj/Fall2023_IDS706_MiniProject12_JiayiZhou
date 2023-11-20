@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Fall2023_IDS706_MiniProject12_JiayiZhou/Fall2023_IDS706_MiniProject12_JiayiZhou/mlruns/0/bfb1448c08c8486db93c0b9d9e05725e/artifacts
+end_time: 1700450305192
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bfb1448c08c8486db93c0b9d9e05725e
+run_name: able-mule-503
+run_uuid: bfb1448c08c8486db93c0b9d9e05725e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700450303553
+status: 3
+tags: []
+user_id: runner
